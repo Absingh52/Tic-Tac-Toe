@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+    font-family: "Mulish", serif;
+}
+:root{
+    --black:#080808;
+    --green:#13da08f3;
+
+}
+.wrapper{
+    background-image: url('gradient.png');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.game-info{
+    position: absolute;
+
+    font-size: 1.1rem;
+    color: var(--black);
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.037);
+    width: 17%;
+    text-align: center;
+    padding:12px;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    position:absolute;
+    top:3rem;
+    left: 50%;
+    
+    transform: translateX(-50%);
+}
+.tic-tac-toe{
+    background-color: rgba(0, 0, 0, 0.037);
+    width:25% ;
+    aspect-ratio: 1/1;
+    padding:3rem;
+    border-radius: 1rem;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.box
+{
+    aspect-ratio: 1/1;
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box1,.box2,.box4,.box5{
+    border-right:2px solid black;
+    border-bottom: 2px solid black;
+}
+.box3,.box6{
+    border-bottom: 2px solid black;
+
+}
+.box7,.box8{
+    border-right:2px solid black;
+    
+}
+.btn{
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.037);
+    width: 10%;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    position:absolute;
+    bottom:3rem;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    display: none;
+    /* letter-spacing: 2px; */
+}
+/* button::content{
+    text-align: center;
+} */
+.btn.active{
+    display: flex;
+}
+.win{
+ background-color: var(--green);
+}
