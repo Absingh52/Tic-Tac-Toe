@@ -114,6 +114,55 @@ html, body{
 }
 
 
+
+@media (max-width:1080px){
+    .game-info{
+        font-size: 1rem;
+        width: 23%;
+        
+    }
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size:1280px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+
+    }
+    .box{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 1rem;
+        width: 18%;
+        
+    }
+    .tic-tac-toe{
+        width: 40%;
+    }
+}
+
+@media (max-width:850px){
+    .game-info{
+        
+        width: 33%;
+        padding:16px ;
+        
+    }
+
+    .box
+    {
+        width:100%;
+    font-size: 2rem;
+    }
+    .tic-tac-toe{
+        width: 50%;
+    }
+}
+
 @media (max-width:550px){
     .game-info{
         font-size: 1rem;
@@ -124,7 +173,7 @@ html, body{
     .box
     {
         width:100%;
-         font-size: 1.4rem;
+         font-size: 1.8rem;
          font-weight: 600;
     }
    
@@ -133,25 +182,24 @@ html, body{
         width: 35%;
         
     }
+    .tic-tac-toe{
+        width: 60%;
+    }
 }
 
 @media (max-width:450px){
+    .game-info{
+        width: 70%;
+    }
     .box
     {
         width:100%;
          font-size: 2rem;
-         font-weight: 600;
+         /* font-weight: 600; */
     }
-   
-}
-@media (max-width:380px){
     .tic-tac-toe{
-        width: 70%;
+        width: 85%;
     }
-    .game-info{
-        font-size: 1rem;
-        width: 70%;
-        
-        
-    }
+
+   
 }
