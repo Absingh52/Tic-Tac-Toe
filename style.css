@@ -112,3 +112,46 @@ html, body{
 .win{
  background-color: var(--green);
 }
+
+
+@media (max-width:550px){
+    .game-info{
+        font-size: 1rem;
+        width: 50%;
+        
+        
+    }
+    .box
+    {
+        width:100%;
+         font-size: 1.4rem;
+         font-weight: 600;
+    }
+   
+    .btn{
+        font-size: 1rem;
+        width: 35%;
+        
+    }
+}
+
+@media (max-width:450px){
+    .box
+    {
+        width:100%;
+         font-size: 2rem;
+         font-weight: 600;
+    }
+   
+}
+@media (max-width:380px){
+    .tic-tac-toe{
+        width: 70%;
+    }
+    .game-info{
+        font-size: 1rem;
+        width: 70%;
+        
+        
+    }
+}
