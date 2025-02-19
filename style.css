@@ -200,11 +200,9 @@ html, body{
     .tic-tac-toe{
         width: 85%;
     }
-    .wrapper{
-        gap:1rem;
-    }
+   
     .btn{
-        margin-bottom:1rem
+        bottom:6rem
     }
    
 }
